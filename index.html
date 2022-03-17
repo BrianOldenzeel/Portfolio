@@ -5,23 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=<i>, initial-scale=1.0">
     <link rel="stylesheet" href="/CSS/style.css">
-    <title>Portofolio Brian Oldenzeel</title>
+    <link rel="icon" type="image/x-icon" href="img/Logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Portfolio Brian Oldenzeel</title>
 </head>
-
-<style>
-    ::-webkit-scrollbar {
-        width: 8.5px;
-    }
-
-    ::-webkit-scrollbar-track {
-        border-radius: 1px;
-    }
-    
-    ::-webkit-scrollbar-thumb {
-        border-radius: 5px;
-        background: rgb(160, 160, 160);
-    }
-</style>
 
 <body>
     <div class="nav-container">
@@ -48,15 +35,18 @@
     </section>
     
     <section class="about_me" id="about_me_scroll">
-        
+            
             <h1 id="about_me">About</h1>
             <p id="about_me_text">
-            Ik ben Brian Oldenzeel en ik doe de opleiding software developer aan het Alfa-college in groningen.
+            Ik ben Brian Oldenzeel ik ben 18 jaar oud. En ik doe de opleiding software developer aan het Alfa-college in groningen.
             </p>      
-            <img id="persoonfoto" src="/IMG/whitesquare.jpg" alt="">
-
+            <img id="persoonfoto" src="/IMG/persoonfoto.png" alt="">
     </section>
-    
+    <div class="cv_div">
+        <a href="/files/test.pdf" class="cv_button">CV
+            <i class="fa fa-download"></i>
+        </a>
+    </div>
 
     <section class="skills" id="skills_scroll">
         <h1 id="skills">Skills</h1>
@@ -67,11 +57,11 @@
                 <br>
                 <span>HTML5</span>
                 <br>
-                <label for="fuel">70%:</label>
+                <label for="fuel">60%:</label>
                     <meter id="fuel"
                         min="0" max="100"
                         low="33" high="66" optimum="80"
-                        value="70">
+                        value="60">
                     </meter>
             </div>
             <div class="grid-item">
@@ -79,11 +69,11 @@
                 <br>
                 <span>CSS3</span>
                 <br>
-                <label for="fuel">50%:</label>
+                <label for="fuel">30%:</label>
                     <meter id="fuel"
                         min="0" max="100"
                         low="33" high="66" optimum="80"
-                        value="50">
+                        value="40">
                     </meter>
             </div>
             <div class="grid-item">
@@ -97,53 +87,60 @@
                         low="33" high="66" optimum="80"
                         value="20">
                     </meter>
-            </div>
+            </div>            
         </div>
         
     </section>
     
     <section class="projects" id="projects_scroll">
-        <h1 id="projects">Projects N/A</h1>
+        <h1 id="projects">Projects</h1>
+        
     </section>
 
     <section class="contact_me" id="contact_me_scroll">
         <h1 id="contact_me">Contact</h1>
         <div class="contact_body">
-            <span></span>
+            <p class="contact_text">Bent u geinteresseert? kunt u mij hier contacteren.</p>
             <ul class="contact_ul">
                 <li>
-                    <a href=""><img src="/IMG/discord icon.png" alt=""></a>
+                    <a href="mailto:brianoldenzeelportfolio@gmail.com"><img src="/IMG/mail.png" alt=""></a>
                     <br>
-                    <span>Discord</span>
+                    <span id="email_span">brianoldenzeelportfolio@gmail.com</span>
                 </li>
                 <li>
-                    <a href=""><img src="/IMG/mail.png" alt=""></a>
+                    <a href="https://www.google.nl/maps/place/Groningen/@53.2216845,6.4956537,12z/data=!3m1!4b1!4m5!3m4!1s0x47c83286b462cca7:0xcb4b5086f9a6c8dc!8m2!3d53.2193835!4d6.5665017" target="blank"><img src="/IMG/location.png" alt=""></a>
                     <br>
-                    <span>Mail</span>
+                    <span>Groningen, Netherlands</span>
                 </li>
                 <li>
-                    <a href=""><img src="/IMG/location.png" alt=""></a>
+                    <a href="tel:31-638142614"><img src="/IMG/call.png" alt=""></a>
                     <br>
-                    <span>Location</span>
+                    <span>31-638142614</span>
                 </li>
                 <li>
-                    <a href=""><img src="/IMG/25231 (1).png" alt=""></a>
+                    <a href="https://github.com/BrianOldenzeel" target="blank"><img src="/IMG/25231 (1).png" alt=""></a>
                     <br>
                     <span>Github</span>
                 </li>
                 <li>
-                    <a href=""><img src="/IMG/2111640.png" alt=""></a>
+                    <a href="https://stackoverflow.com/" target="blank"><img src="/IMG/2111640.png" alt=""></a>
                     <br>
                     <span>Stackoverflow</span>
                 </li>
                 <li>
-                    <a href=""><img src="/IMG/linkedin.png" alt=""></a>
+                    <a href="https://nl.linkedin.com/" target="blank"><img src="/IMG/linkedin.png" alt=""></a>
                     <br>
                     <span>LinkedIn</span>
                 </li>
             </ul>                  
         </div>
     </section>
+
+    <footer>
+        <div class="footer_div">
+            <p>copyright &copy;2021 Brian Oldenzeel. Designed by <span>Brian Oldenzeel</span></p>
+        </div>
+    </footer>
 
 
 </body>

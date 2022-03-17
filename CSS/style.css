@@ -15,6 +15,19 @@ body {
   display: relative;
 }
 
+::-webkit-scrollbar {
+  width: 8.5px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: rgb(221, 221, 221);
+}
+
 li,
 a {
   font-weight: 600;
@@ -31,7 +44,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.55);
+  background-color: rgba(0, 0, 0, 0.75);
   z-index: 1000000;
 }
 
@@ -41,10 +54,6 @@ header {
   font-size: 27px;
   font-weight: 700;
   height: 90px;
-}
-
-#logo :hover {
-  color: rgb(224, 222, 222);
 }
 
 .nav_links {
@@ -91,8 +100,10 @@ header {
   position: absolute;
 }
 
+/* about me section */
+
 .about_me {
-  margin: 0px 300px 200px;
+  margin: 0px 300px 0px;
   padding-top: 0px;
   display: flex;
   align-items: center;
@@ -101,7 +112,7 @@ header {
 
 #about_me_text {
   text-align: justify;
-  margin-right: 20px;
+  margin-right: 110px;
 }
 
 #about_me {
@@ -114,7 +125,29 @@ header {
 }
 
 #persoonfoto {
-  margin-top: 140px;
+  margin-top: 180px;
+  height: 300px;
+  border-radius: 15px;
+}
+
+.cv_div {
+  padding-bottom: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.cv_button {
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 20px;
+}
+
+.cv_button:hover {
+  background-color: rgb(196, 195, 195);
 }
 
 /*skills section*/
@@ -161,6 +194,7 @@ header {
 .skills .skills_grid .grid-item meter {
   width: 65px;
   padding-top: 10px;
+  border: solid black 1px;
 }
 
 .grid-item {
@@ -181,7 +215,7 @@ header {
 #projects {
   text-align: center;
   font-size: 40px;
-  position: absolute;
+
   align-items: center;
   justify-content: center;
 }
@@ -204,21 +238,49 @@ header {
   margin-bottom: 300px;
 }
 
+.contact_text {
+  text-align: center;
+  padding-bottom: 50px;
+  padding-top: 30px;
+}
+
 .contact_body .contact_ul ul {
   list-style: none;
 }
 
 .contact_body .contact_ul li {
   display: inline-block;
+  text-align: center;
 }
 
 .contact_body .contact_ul img {
   height: 70px;
   width: auto;
-  padding: 0 50px 0 50px;
+  padding: 0 40px 0 40px;
   filter: invert(1);
 }
 
 .contact_body .contact_ul span {
   color: white;
+  font-size: 9px;
+}
+
+.contact_body .contact_ul #email_span {
+  font-size: 7.5px;
+}
+
+/*Footer*/
+
+footer {
+  text-align: center;
+  height: 40px;
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.footer_div span {
+  opacity: 0.4;
+  font-weight: 200px;
+  font-size: 12px;
 }
