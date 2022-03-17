@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+  color: white;
+  flex-direction: column;
+  display: relative;
+}
+
+li,
+a {
+  font-weight: 600;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.55);
+  z-index: 1000000;
+}
+
+#logo {
+  padding: 25px 80px;
+  cursor: pointer;
+  font-size: 27px;
+  font-weight: 700;
+  height: 90px;
+}
+
+#logo :hover {
+  color: rgb(224, 222, 222);
+}
+
+.nav_links {
+  list-style: none;
+  justify-content: flex-end;
+  padding: 25px 25px;
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 0 7px;
+  cursor: pointer;
+  font-size: 8;
+}
+
+.nav_links li a {
+  color: white;
+  font-size: 15px;
+}
+
+.nav_links li:hover a {
+  color: rgb(224, 222, 222);
+}
+
+.background {
+  width: 100%;
+  height: 135vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.background #introtxt {
+  z-index: 1;
+  position: absolute;
+  text-align: left;
+  font-size: 45px;
+  font-weight: 800;
+  margin-bottom: 90px;
+}
+
+#introtxt2 {
+  font-family: monospace;
+  position: absolute;
+}
+
+.about_me {
+  margin: 0px 300px 200px;
+  padding-top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#about_me_text {
+  text-align: justify;
+  margin-right: 20px;
+}
+
+#about_me {
+  text-align: center;
+  font-size: 40px;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 200px;
+}
+
+#persoonfoto {
+  margin-top: 140px;
+}
+
+/*skills section*/
+
+.skills {
+  margin-bottom: 600px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+#skills {
+  text-align: center;
+  font-size: 40px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.skills_grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  width: 1000px;
+  grid-gap: 150px;
+  margin: auto;
+}
+
+.skills .skills_grid .grid-item img {
+  width: 100px;
+  height: 100px;
+}
+
+.skills .skills_grid .grid-item span {
+  font-size: 14px;
+  text-align: justify;
+}
+
+.skills .skills_grid .grid-item label {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.skills .skills_grid .grid-item meter {
+  width: 65px;
+  padding-top: 10px;
+}
+
+.grid-item {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+/*projects section*/
+
+.projects {
+  margin: 30px 300px 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#projects {
+  text-align: center;
+  font-size: 40px;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Contact section*/
+
+.contact_me {
+  margin-bottom: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#contact_me {
+  text-align: center;
+  font-size: 40px;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 300px;
+}
+
+.contact_body .contact_ul ul {
+  list-style: none;
+}
+
+.contact_body .contact_ul li {
+  display: inline-block;
+}
+
+.contact_body .contact_ul img {
+  height: 70px;
+  width: auto;
+  padding: 0 50px 0 50px;
+  filter: invert(1);
+}
+
+.contact_body .contact_ul span {
+  color: white;
+}
