@@ -226,6 +226,13 @@ header {
 }
 
 .project-item img {
+  transition: 0.2s;
+}
+.project-item img:hover {
+  transform: scale(1.1);
+}
+
+.project-item img {
   height: 100px;
   width: auto;
 }
