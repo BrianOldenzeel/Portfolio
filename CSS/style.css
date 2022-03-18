@@ -206,18 +206,28 @@ header {
 /*projects section*/
 
 .projects {
-  margin: 30px 300px 800px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin: 30px 100px 800px;
 }
 
 #projects {
   text-align: center;
   font-size: 40px;
+}
 
-  align-items: center;
-  justify-content: center;
+.grid-project {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  margin: 10px;
+}
+.project-item {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 50px;
+}
+
+.project-item img {
+  height: 100px;
+  width: auto;
 }
 
 /*Contact section*/
